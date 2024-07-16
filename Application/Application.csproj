@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Brands\Constants\" />
+    <Folder Include="Features\Cars\Constants\" />
+    <Folder Include="Features\Cars\Rules\" />
+    <Folder Include="Features\Colors\Constants\" />
+    <Folder Include="Features\Colors\Queries\GetAll\" />
+    <Folder Include="Features\Colors\Queries\GetById\" />
+    <Folder Include="Features\Colors\Rules\" />
+    <Folder Include="Pipeline\Authentication\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+</Project>
